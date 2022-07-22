@@ -1,0 +1,4 @@
+*.class
+*./classes/*
+/Api/target/classes/application.properties
+*.lst
