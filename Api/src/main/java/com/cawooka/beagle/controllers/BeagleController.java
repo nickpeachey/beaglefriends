@@ -13,6 +13,7 @@ public class BeagleController {
     @GetMapping("/event")
     public ResponseEntity<String> event() {
         BeagleProducer producer = new BeagleProducer();
-        return new ResponseEntity<>("hello world", HttpStatus.OK);
+        boolean result = producer.publish("hello from the controller");
+        return new ResponseEntity<>("hello world" + result, HttpStatus.OK);
     }
 }
