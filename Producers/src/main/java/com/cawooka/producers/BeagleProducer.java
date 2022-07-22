@@ -1,5 +1,7 @@
 package com.cawooka.producers;
 
+import com.cawooka.Beagle;
+import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -19,15 +21,21 @@ public class BeagleProducer {
         properties.setProperty("retries", "10");
 
         properties.setProperty("key.serializer", StringSerializer.class.getName());
-        properties.setProperty("value.serializer", StringSerializer.class.getName());
+        properties.setProperty("value.serializer", KafkaAvroSerializer.class.getName());
         properties.setProperty("schema.registry.url", "http://127.0.0.1:8081");
     }
 
     public boolean publish(String name) {
-        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
+        KafkaProducer<String, Beagle> producer = new KafkaProducer<String, Beagle>(properties);
         String topic = "beagle-test";
 
-        ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>(topic, name);
+        Beagle beagle = Beagle.newBuilder()
+                .setFirstName("Willow Louise")
+                .setAge(2)
+                .setLastName("Peachey")
+                .build();
+
+        ProducerRecord<String, Beagle> producerRecord = new ProducerRecord<String, Beagle>(topic, beagle);
 
         producer.send(producerRecord, new Callback() {
             @Override

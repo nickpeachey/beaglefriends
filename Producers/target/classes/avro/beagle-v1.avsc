@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "com.cawooka",
+  "name": "Beagle",
+  "version" : "1",
+  "fields" : [
+    {"name": "first_name","type": "string", "doc" : "First name of customer"},
+    {"name": "last_name","type": "string", "doc" : "Last name of customer"},
+    {"name": "age","type": "int", "doc" : "Age of the customer"}
+  ]
+}

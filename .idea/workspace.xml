@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="689762a9-3d6f-41e8-8300-fffe30207742" name="Changes" comment="added producer">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="689762a9-3d6f-41e8-8300-fffe30207742" name="Changes" comment="added ignores">
+      <change afterPath="$PROJECT_DIR$/Producers/src/main/resources/avro/beagle-v1.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Producers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producers/src/main/java/com/cawooka/producers/BeagleProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Producers/src/main/java/com/cawooka/producers/BeagleProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658494977882</updated>
       <workItem from="1658494980393" duration="1179000" />
-      <workItem from="1658499098219" duration="1039000" />
+      <workItem from="1658499098219" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="added producer">
       <created>1658500115916</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658500115917</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added ignores">
+      <created>1658500191003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658500191003</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="added producer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added producer" />
+    <MESSAGE value="added ignores" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ignores" />
   </component>
 </project>
